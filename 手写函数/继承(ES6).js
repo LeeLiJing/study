@@ -1,5 +1,6 @@
 /**
- * @description  class继承中 子类构造函数的原型为父类的构造函数
+ * @description ES5 寄生继承
+ * @override class继承中 子类构造函数的原型为父类的构造函数
  */
 class SuperClass {
   constructor(name) {
