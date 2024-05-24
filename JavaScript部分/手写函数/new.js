@@ -18,7 +18,6 @@ function myNew(Constructor, ...args) {
 let Fn = function (name, age) {
   this.name = name;
   this.age = age;
-  return {};
 };
 
 Fn.prototype.say = function () {
