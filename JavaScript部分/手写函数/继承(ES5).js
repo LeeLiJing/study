@@ -1,5 +1,12 @@
 /**
  * @description ES5 寄生继承
+ * 继承实现原理:
+ * 1. 子类的原型对象 通过Object.create方法创建以父类原型对象为模版的对象，并赋值给子类的原型对象
+ * ChildClass.prototype = Object.create(SuperClass.prototype)
+ * 2.子类的构造函数(constructor)指向子类的构造函数
+ * ChildClass.prototype.constructor = ChildClass
+ * 3.在子类构造函数中，将子类的this通过call指向给父类
+ * SuperClass.call(this)
  */
 function inherit(childClass, superClass) {
   childClass.prototype = Object.create(superClass.prototype);
