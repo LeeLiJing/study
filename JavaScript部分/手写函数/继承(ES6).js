@@ -69,6 +69,10 @@ console.log(
   "ChildClass.__proto__ === Function.prototype :",
   ChildClass.__proto__ === Function.prototype
 );
+console.log(
+  "ChildClass.__proto__ === SuperClass :",
+  ChildClass.__proto__ === SuperClass
+);
 childClass.childConstructorFun();
 console.log(childClass.flat);
 childClass.childProtoFun();
